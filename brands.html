@@ -18,84 +18,102 @@
     <button class="ital-menu-toggle d-lg-none" id="menuToggle">☰</button>
     <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex">
       <ul class="navbar-nav ital-nav-links">
-        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link " href="about.html">About Us</a></li>
-        <li class="nav-item dropdown ital-dropdown"> <a class="nav-link" href="#">Brands ▾</a>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item dropdown ital-dropdown"> <a class="nav-link" href="brands-all.html">Portfolio ▾</a>
           <div class="ital-dropdown-menu"> <a href="jmm.html">Jacques Marie Mage</a> <a href="matsuda.html">Matsuda</a> <a href="thombrowne.html">Thom Browne</a> </div>
         </li>
-		  <li class="nav-item dropdown ital-dropdown"> <a class="nav-link active" href="#">Our Approach ▾</a>
-          <div class="ital-dropdown-menu"> 
-			  <a class="nav-link " href="brands.html">For Brands</a> 
-			  <a class="nav-link" href="retailers.html">For Retailers</a> 
-		</div>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="retailers.html">For Retailers</a></li>
+       <li class="nav-item"><a class="nav-link active" href="brands.html">For Brands</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </div>
-    <div class="d-none d-lg-block"> <a href="contact.html" class="ital-btn-outline">Enquire Now</a> </div>
+    <div class="d-none d-lg-block"> <a href="contact.html" class="ital-nav-logo-btn"> <img src="images/enquire-icon.png" alt="Enquire"> </a> </div>
   </div>
 </nav>
 
 <!-- MOBILE MENU -->
-<div class="ital-mobile-menu" id="mobileMenu">  
+<div class="ital-mobile-menu" id="mobileMenu"> 
   <!-- Close Button -->
   <button class="ital-close-btn" id="closeMenu">✕</button>
   <div class="ital-mobile-inner">
     <ul class="ital-mobile-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      
       <!-- Mobile Dropdown -->
-      <li class="ital-mobile-dropdown"> <span>Brands ▾</span>
-        <div class="ital-mobile-submenu"> 
-			<a href="jmm.html">Jacques Marie Mage</a> 
-			<a href="matsuda.html">Matsuda</a> 
-			<a href="thombrowne.html">Thom Browne</a> 
-		</div>
-      </li>
-	  <li class="ital-mobile-dropdown"> <span>Our Approach ▾</span>
-        <div class="ital-mobile-submenu"> 
-			<a href="brands.html">For Brands</a>
-			<a href="retailers.html">For Retailers</a> 
-		</div>
-      </li>
+      <li class="ital-mobile-dropdown">
+
+  <a href="brands-all.html" class="ital-mobile-dropdown-toggle">
+    <span>Portfolio ▾</span>
+  </a>
+
+  <div class="ital-mobile-submenu">
+    <a href="jmm.html">Jacques Marie Mage</a>
+    <a href="matsuda.html">Matsuda</a>
+    <a href="thombrowne.html">Thom Browne</a>
+  </div>
+
+</li>
+      <li><a href="retailers.html">For Retailers</a></li>
+      <li><a href="brands.html">For Brands</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <button class="ital-btn-primary w-100">Enquire Now</button>
+        <!-- MOBILE ENQUIRE BUTTON -->
+        <div class="ital-mobile-enquire">
+          <a href="contact.html" class="ital-mobile-enquire-btn">
+            <img src="images/enquire-icon-w.png" alt="Enquire">
+          </a>
+        </div>
   </div>
 </div>
+<!-- ABOUT HERO -->
+<section class="ital-brands-hero">
 
-<section class="ital-retailer">
-  <div class="container">
-    <div class="row align-items-start"> 
-      
+  <div class="container-fluid px-0">
+
+    <div class="row g-0 align-items-center">
+
       <!-- LEFT -->
-      <div class="col-lg-7 ital-retailer-left">
-        <p class="ital-section-label mb-0">For Brands</p>
-        <h1 class="ital-about-title"> A disciplined path<br>
+      <div class="col-lg-6">
+        
+        <div class="ital-brands-hero-left">
+           <p class="ital-section-label">For Brands</p>
+        <h1 class="ital-title"> A disciplined path<br>
           <em>into India.</em> </h1>
-        <p class="ital-retailer-desc"> ItalOpti partners with eyewear brands that require more than logistics. We provide selective market access, brand-right retail placement, visual execution, and long-term value creation across India. </p>
-        <a class="ital-btn-primary ital-btn-light" href="contact.html">Discuss Distribution</a> </div>
-      
-      <!-- RIGHT -->
-      <div class="col-lg-5 ital-retailer-right">
-        <p class="ital-section-label mb-0">What we protect</p>
-        <ul class="ital-retailer-list">
-          <li>Brand positioning and distribution discipline</li>
-          <li>Retail door selection and qualitative network development</li>
-          <li>Visual merchandising aligned with international guidelines</li>
-          <li>Training, sell-out support, and selective market activation</li>
-          <li>Long-term growth without volume-driven brand dilution</li>
-        </ul>
+        <p class="ital-retailer-desc">  ItalOpti partners with eyewear brands that require more than logistics. We provide selective market access, brand-right retail placement, visual execution, and long-term value creation across India. </p>
+          <a class="ital-btn-primary ital-btn-light"
+             href="contact.html">
+             Discuss Distribution
+          </a>
+
+        </div>
+
       </div>
+
+      <!-- RIGHT -->
+      <div class="col-lg-6">
+
+        <div class="ital-brands-hero-right">
+
+          <img src="images/20260502_041617449_iOS.jpg"
+               alt="Brand Distribution">
+
+        </div>
+
+      </div>
+
     </div>
+
   </div>
+
 </section>
-<section class="ital-values  py-5">
-  <div class="container">
-    <p class="ital-section-label mb-0">Capability Platform</p>
-    <h1 class="ital-about-title"> From market entry to<br>
- <em>brand development.</em> </h1>
+<section class="ital-values py-5">
+  <div class="container px-0">
+    <p class="ital-section-label">Capability Platform</p>
+            <h2 class="ital-what-title">
+              From market entry to<br>
+              <em>brand development.</em>
+            </h2>
     <div class="row ital-values-row">
       <div class="ital-capability-grid">
 
@@ -103,10 +121,7 @@
       <div class="ital-cap-card light">
         <p class="ital-cap-num">01</p>
         <h4 class="ital-cap-title">Market Access</h4>
-        <p class="ital-cap-desc">
-          Access to established optical retailers and premium partners
-          across key Indian cities.
-        </p>
+        <p class="ital-cap-desc"> Access to established optical retailers and premium partners across key Indian cities. </p>
       </div>
 
       <!-- 02 -->
@@ -114,18 +129,16 @@
         <p class="ital-cap-num">02</p>
         <h4 class="ital-cap-title">Controlled Placement</h4>
         <p class="ital-cap-desc">
-          Selective distribution designed to protect scarcity,
-          positioning, and brand equity.
+          Selective distribution designed to protect scarcity, positioning, and brand equity.
         </p>
       </div>
 
       <!-- 03 -->
       <div class="ital-cap-card light">
         <p class="ital-cap-num">03</p>
-        <h4 class="ital-cap-title">Retail Execution</h4>
+        <h4 class="ital-cap-title">Visual Merchandising</h4>
         <p class="ital-cap-desc">
-          In-store display, training, merchandising discipline,
-          and brand-right presentation.
+          Disciplined in-store presentation aligned with each brand's global visual identity standards.
         </p>
       </div>
 
@@ -134,8 +147,7 @@
         <p class="ital-cap-num">04</p>
         <h4 class="ital-cap-title">Brand Activation</h4>
         <p class="ital-cap-desc">
-          Private showcases, curated client experiences,
-          and targeted marketing activations.
+          Private showcases, curated client experiences, and targeted marketing activations.
         </p>
       </div>
 
@@ -144,8 +156,7 @@
         <p class="ital-cap-num">05</p>
         <h4 class="ital-cap-title">Operational Control</h4>
         <p class="ital-cap-desc">
-          Reliable local coordination across ordering,
-          delivery, account support, and after-sales.
+          Reliable local coordination across ordering, delivery, account support, and after-sales.
         </p>
       </div>
 
@@ -154,8 +165,7 @@
         <p class="ital-cap-num">06</p>
         <h4 class="ital-cap-title">Long-Term Value</h4>
         <p class="ital-cap-desc">
-          A partnership approach focused on building brand desirability,
-          not short-term volume.
+          A partnership approach focused on building brand desirability, not short-term volume.
         </p>
       </div>
 
@@ -185,7 +195,7 @@
       <!-- RIGHT -->
       <div class="col-lg-4 text-lg-end">
 
-        <a href="#" class="ital-brand-cta-btn">
+        <a href="contact.html" class="ital-brand-cta-btn">
           Contact ItalOpti
         </a>
 
@@ -203,10 +213,12 @@
       <div class="col-md-3 text-md-start text-center"> <img src="images/logo.png" class="ital-footer-logo" alt="ItalOpti"> </div>
       <div class="col-md-6 text-center">
         <ul class="ital-footer-links">
-			<li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="brands-all.html">Brands</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="brands-all.html">Portfolio</a></li>
+          <li><a href="retailers.html">Our Approach</a></li>
+			<li><a href="brands.html">For Brands</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="col-md-3 text-md-end text-center">
@@ -263,6 +275,41 @@ window.addEventListener('scroll', () => {
     started = true;
   }
 });
+</script>
+<script>
+
+document.querySelectorAll('.ital-mobile-dropdown-toggle').forEach(toggle => {
+
+  let clickedOnce = false;
+
+  toggle.addEventListener('click', function(e) {
+
+    const parent = this.closest('.ital-mobile-dropdown');
+
+    /* FIRST CLICK */
+    if (!clickedOnce) {
+
+      e.preventDefault();
+
+      parent.classList.add('open');
+
+      clickedOnce = true;
+
+      /* RESET */
+      setTimeout(() => {
+
+        clickedOnce = false;
+
+      }, 3000);
+
+    }
+
+    /* SECOND CLICK = NORMAL LINK */
+
+  });
+
+});
+
 </script>
 </body>
 </html>

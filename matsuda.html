@@ -26,10 +26,11 @@
       <ul class="navbar-nav ital-nav-links">
         <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
-        <li class="nav-item dropdown ital-dropdown"> <a class="nav-link active" href="brands-all.html">Brands ▾</a>
+        <li class="nav-item dropdown ital-dropdown"> <a class="nav-link active" href="brands-all.html">Portfolio ▾</a>
           <div class="ital-dropdown-menu"> <a href="jmm.html">Jacques Marie Mage</a> <a href="matsuda.html">Matsuda</a> <a href="thombrowne.html">Thom Browne</a> </div>
         </li>
-		  <li class="nav-item"><a class="nav-link" href="retailers.html">Our Approach</a></li>
+		  <li class="nav-item"><a class="nav-link" href="retailers.html">For Retailers</a></li>
+       <li class="nav-item"><a class="nav-link" href="brands.html">For Brands</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </div><div class="d-none d-lg-block">
@@ -39,26 +40,39 @@
 </div>
   </div>
 </nav>
+
 <!-- MOBILE MENU -->
-<div class="ital-mobile-menu" id="mobileMenu">  
+<div class="ital-mobile-menu" id="mobileMenu"> 
   <!-- Close Button -->
   <button class="ital-close-btn" id="closeMenu">✕</button>
   <div class="ital-mobile-inner">
     <ul class="ital-mobile-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      
       <!-- Mobile Dropdown -->
-      <li class="ital-mobile-dropdown"> <span>Brands ▾</span>
-        <div class="ital-mobile-submenu"> 
-			<a href="jmm.html">Jacques Marie Mage</a> 
-			<a href="matsuda.html">Matsuda</a> 
-			<a href="thombrowne.html">Thom Browne</a> 
-		</div>
-      </li>
-	  <li><a href="retailers.html">Our Approach</a></li>
+      <li class="ital-mobile-dropdown">
+
+  <a href="brands-all.html" class="ital-mobile-dropdown-toggle">
+    <span>Portfolio ▾</span>
+  </a>
+
+  <div class="ital-mobile-submenu">
+    <a href="jmm.html">Jacques Marie Mage</a>
+    <a href="matsuda.html">Matsuda</a>
+    <a href="thombrowne.html">Thom Browne</a>
+  </div>
+
+</li>
+      <li><a href="retailers.html">For Retailers</a></li>
+      <li><a href="brands.html">For Brands</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+        <!-- MOBILE ENQUIRE BUTTON -->
+        <div class="ital-mobile-enquire">
+          <a href="contact.html" class="ital-mobile-enquire-btn">
+            <img src="images/enquire-icon-w.png" alt="Enquire">
+          </a>
+        </div>
   </div>
 </div>
 
@@ -66,10 +80,10 @@
 <section class="ital-matsuda-hero">
 
   <div class="ital-matsuda-topbar">
-    <a href="#" class="ital-back-link">← All Brands</a>
+    <a href="brands-all.html" class="ital-back-link"> &larr; All Brands</a>
 <!--
     <a href="https://www.matsuda.com/en-in?srsltid=AfmBOoqJUDt9VxxDWKhVMVYpts3TirfeuUHjtiEjDEblMQA_zZ5I_sQH" class="ital-matsuda-btn">
-      Visit Matsuda.com ↗
+      Visit Matsuda.com &#8599;
     </a>
 -->
   </div>
@@ -314,7 +328,7 @@
       </div>
     
 		<a href="https://www.matsuda.com/en-in?srsltid=AfmBOoqJUDt9VxxDWKhVMVYpts3TirfeuUHjtiEjDEblMQA_zZ5I_sQH" class="ital-brands-cta-btn">
-            Visit Matsuda ↗
+            Visit Matsuda &#8599;
           </a>
     
 
@@ -334,8 +348,9 @@
         <ul class="ital-footer-links">
 			<li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="brands-all.html">Brands</a></li>
+          <li><a href="brands-all.html">Portfolio</a></li>
 			<li><a href="retailers.html">Our Approach</a></li>
+			<li><a href="brands.html">For Brands</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -364,13 +379,38 @@ closeBtn?.addEventListener('click', () => {
   menu.classList.remove('active');
 });
 
-/* MOBILE BRANDS DROPDOWN */
-const mobileDropdown = document.querySelector('.ital-mobile-dropdown');
-const mobileSubmenu = document.querySelector('.ital-mobile-submenu');
+</script>
+<script>
 
-mobileDropdown?.addEventListener('click', function () {
+document.querySelectorAll('.ital-mobile-dropdown-toggle').forEach(toggle => {
 
-  this.classList.toggle('open');
+  let clickedOnce = false;
+
+  toggle.addEventListener('click', function(e) {
+
+    const parent = this.closest('.ital-mobile-dropdown');
+
+    /* FIRST CLICK */
+    if (!clickedOnce) {
+
+      e.preventDefault();
+
+      parent.classList.add('open');
+
+      clickedOnce = true;
+
+      /* RESET */
+      setTimeout(() => {
+
+        clickedOnce = false;
+
+      }, 3000);
+
+    }
+
+    /* SECOND CLICK = NORMAL LINK */
+
+  });
 
 });
 
